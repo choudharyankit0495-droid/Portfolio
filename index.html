@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ankit Choudhary // Personal AI Interface</title>
+  <meta name="description" content="Personal portfolio and AI command center of Ankit Choudhary — Student, Aspiring Software Developer, and Artificial Intelligence Enthusiast. Built purely with HTML5 and CSS3.">
+
+  <!-- Futuristic Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@500;600;700&family=Share+Tech+Mono&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- =================================================================
+       CSS-ONLY SYSTEM BOOT SEQUENCE
+       Runs automatically on load, finishes gracefully, and never blocks content.
+       ================================================================= -->
+  <div class="system-boot-overlay" aria-hidden="true">
+    <div class="boot-container">
+      <div class="boot-grid-bg"></div>
+      
+      <!-- Concentric Holographic Calibration Rings -->
+      <div class="boot-ring boot-ring-outer"></div>
+      <div class="boot-ring boot-ring-mid"></div>
+      <div class="boot-ring boot-ring-inner"></div>
+      
+      <!-- Mini Core Ignite -->
+      <div class="boot-core-ignite">
+        <div class="boot-core-spark"></div>
+      </div>
+      
+      <!-- Radar Scanner -->
+      <div class="boot-radar-sweep"></div>
+      
+      <!-- Telemetry Diagnostics Readout -->
+      <div class="boot-telemetry">
+        <div class="boot-sys-tag">STARK HEURISTIC PROTOCOL // MARK LXXXV</div>
+        <div class="boot-diagnostic-line">CALIBRATING NEURAL CORES... <span class="boot-highlight">OK</span></div>
+        <div class="boot-diagnostic-line">SYNCHRONIZING ARC FREQUENCIES... <span class="boot-highlight">1420.4 MHz</span></div>
+        <div class="boot-diagnostic-line">ESTABLISHING HOLOGRAPHIC PROJECTION MATRIX... <span class="boot-highlight">100%</span></div>
+        <div class="boot-status-alert">J.A.R.V.I.S. ONLINE // WELCOME ANKIT</div>
+      </div>
+
+      <!-- Animated Progress Tracker -->
+      <div class="boot-progress-box">
+        <div class="boot-progress-bar"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Background Ambience & Holographic Grid -->
+  <div class="hologram-ambient-backdrop" aria-hidden="true">
+    <div class="cyber-grid"></div>
+    <div class="vignette-overlay"></div>
+    <div class="scanlines-layer"></div>
+    <div class="hologram-light-cone"></div>
+  </div>
+
+  <!-- =================================================================
+       HOLOGRAPHIC NAVIGATION (Pure CSS Checkbox Toggle for Mobile)
+       ================================================================= -->
+  <header class="hud-header">
+    <div class="nav-container">
+      
+      <!-- Brand & Identification -->
+      <a href="#home" class="hud-brand" aria-label="Ankit Choudhary Personal System Home">
+        <div class="brand-reactor-mini" aria-hidden="true">
+          <div class="mini-core"></div>
+        </div>
+        <div class="brand-text-group">
+          <span class="brand-title">ANKIT.C</span>
+          <span class="brand-sub">PERSONAL SYSTEM // V1.0</span>
+        </div>
+      </a>
+
+      <!-- CSS-Only Mobile Menu Toggle -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-input" aria-label="Toggle navigation menu">
+      <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+        <span class="toggle-bar bar-1"></span>
+        <span class="toggle-bar bar-2"></span>
+        <span class="toggle-bar bar-3"></span>
+      </label>
+
+      <!-- Navigation Links -->
+      <nav class="hud-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#home" class="nav-link">
+              <span class="nav-index">00</span>
+              <span class="nav-text">HOME</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">
+              <span class="nav-index">01</span>
+              <span class="nav-text">ABOUT</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link">
+              <span class="nav-index">02</span>
+              <span class="nav-text">SKILLS</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link">
+              <span class="nav-index">03</span>
+              <span class="nav-text">PROJECTS</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#education" class="nav-link">
+              <span class="nav-index">04</span>
+              <span class="nav-text">EDUCATION</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">
+              <span class="nav-index">05</span>
+              <span class="nav-text">CONTACT</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- System Online Telemetry Badge -->
+      <div class="nav-status-badge" aria-label="System status online">
+        <span class="status-pulse-dot" aria-hidden="true"></span>
+        <span class="status-label">SYSTEM ONLINE</span>
+      </div>
+
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ===============================================================
+         HERO SECTION: THE ARC REACTOR EXPERIENCE
+         =============================================================== -->
+    <section id="home" class="hero-section" aria-label="Hero Introduction and Arc Reactor">
+      
+      <!-- Floating Coordinates & HUD Markers -->
+      <div class="hud-corner-marker top-left" aria-hidden="true">SYS // 37.77N - 122.41W</div>
+      <div class="hud-corner-marker top-right" aria-hidden="true">FREQ // 1420.405 MHz</div>
+      <div class="hud-corner-marker bottom-left" aria-hidden="true">SECURITY // LEVEL-4 CLEARANCE</div>
+      <div class="hud-corner-marker bottom-right" aria-hidden="true">POWER GRID // SYNCHRONIZED</div>
+
+      <div class="hero-container">
+        
+        <!-- Left: Personnel Information & Directives -->
+        <div class="hero-content">
+          <div class="hud-tag-pill">
+            <span class="tag-accent" aria-hidden="true">◈</span>
+            <span class="tag-text">PERSONAL INTERFACE // V 1.0</span>
+          </div>
+
+          <h1 class="hero-name">
+            <span class="hero-firstname">ANKIT</span>
+            <span class="hero-lastname">CHOUDHARY</span>
+          </h1>
+
+          <div class="hero-role-track">
+            <span class="role-segment">STUDENT</span>
+            <span class="role-divider" aria-hidden="true">/</span>
+            <span class="role-segment">ASPIRING SOFTWARE DEVELOPER</span>
+            <span class="role-divider" aria-hidden="true">/</span>
+            <span class="role-segment role-ai">AI ENTHUSIAST</span>
+          </div>
+
+          <h2 class="hero-motto">"Curiosity Fuels Innovation."</h2>
+
+          <p class="hero-description">
+            I'm a student and aspiring software developer who enjoys exploring the technologies I learn. From programming and command-line tools to Artificial Intelligence, I'm driven by curiosity and the desire to understand how things work.
+          </p>
+
+          <!-- Interactive Action Buttons -->
+          <div class="hero-actions">
+            <a href="#projects" class="hud-btn hud-btn-primary">
+              <span class="btn-bracket-left" aria-hidden="true">[</span>
+              <span class="btn-text">EXPLORE MY PROJECTS</span>
+              <span class="btn-bracket-right" aria-hidden="true">]</span>
+              <span class="btn-glimmer" aria-hidden="true"></span>
+            </a>
+            <a href="#about" class="hud-btn hud-btn-secondary">
+              <span class="btn-bracket-left" aria-hidden="true">[</span>
+              <span class="btn-text">ABOUT ME</span>
+              <span class="btn-bracket-right" aria-hidden="true">]</span>
+              <span class="btn-glimmer" aria-hidden="true"></span>
+            </a>
+          </div>
+
+          <!-- Small System Telemetry Strip -->
+          <div class="hero-telemetry-strip" aria-label="System status telemetry">
+            <div class="telemetry-pill">
+              <span class="telemetry-key">STATUS:</span>
+              <span class="telemetry-val">LEARNING &amp; BUILDING</span>
+            </div>
+            <div class="telemetry-pill">
+              <span class="telemetry-key">INTEREST:</span>
+              <span class="telemetry-val highlight-cyan">ARTIFICIAL INTELLIGENCE</span>
+            </div>
+            <div class="telemetry-pill">
+              <span class="telemetry-key">MODE:</span>
+              <span class="telemetry-val">DEVELOPMENT</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Elaborate 3D-Style CSS Arc Reactor -->
+        <div class="hero-visual" aria-label="3D CSS Arc Reactor Simulation">
+          <div class="reactor-viewport">
+            
+            <!-- Floating Technical HUD Labels -->
+            <div class="reactor-hud-label hud-top-left" aria-hidden="true">
+              <span class="hud-mono-sm">CORE ENERGY</span>
+              <span class="hud-mono-val">3.24 GJ/s</span>
+            </div>
+            <div class="reactor-hud-label hud-top-right" aria-hidden="true">
+              <span class="hud-mono-sm">POWER SYSTEM</span>
+              <span class="hud-mono-val status-active">ACTIVE</span>
+            </div>
+            <div class="reactor-hud-label hud-bot-left" aria-hidden="true">
+              <span class="hud-mono-sm">AI MODULE</span>
+              <span class="hud-mono-val status-standby">STANDBY</span>
+            </div>
+            <div class="reactor-hud-label hud-bot-right" aria-hidden="true">
+              <span class="hud-mono-sm">REACTOR STATUS</span>
+              <span class="hud-mono-val status-online">ONLINE</span>
+            </div>
+
+            <!-- Concentric Circular HUD Compass Rings -->
+            <div class="hud-compass-ring outer" aria-hidden="true"></div>
+            <div class="hud-compass-ring inner" aria-hidden="true"></div>
+
+            <!-- The Arc Reactor Complex -->
+            <div class="arc-reactor" role="img" aria-label="CSS-generated holographic Arc Reactor with glowing energy core and rotating containment rings">
+              
+              <!-- Layer 10: Soft Cyan Energy Ambient Glow -->
+              <div class="reactor-halo-aura"></div>
+
+              <!-- Layer 8: 3D Holographic Orbit Ring Lines -->
+              <div class="reactor-orbit-rings">
+                <div class="orbit-ring orbit-ring-1"></div>
+                <div class="orbit-ring orbit-ring-2"></div>
+                <div class="orbit-ring orbit-ring-3"></div>
+              </div>
+
+              <!-- Layer 1: Heavy Beveled Outer Metallic Casing -->
+              <div class="reactor-outer-casing">
+                <div class="casing-rim-bevel"></div>
+                <div class="casing-bolts">
+                  <span class="bolt b-1"></span>
+                  <span class="bolt b-2"></span>
+                  <span class="bolt b-3"></span>
+                  <span class="bolt b-4"></span>
+                  <span class="bolt b-5"></span>
+                  <span class="bolt b-6"></span>
+                  <span class="bolt b-7"></span>
+                  <span class="bolt b-8"></span>
+                </div>
+              </div>
+
+              <!-- Layer 2: Rotating Outer Degree Telemetry Ring -->
+              <div class="reactor-telemetry-ring">
+                <div class="degree-tick tick-0">000°</div>
+                <div class="degree-tick tick-90">090°</div>
+                <div class="degree-tick tick-180">180°</div>
+                <div class="degree-tick tick-270">270°</div>
+              </div>
+
+              <!-- Layer 5: 10 Magnetic Energy Inductor Coils (Copper & Cyan Glow) -->
+              <div class="reactor-coils-housing">
+                <div class="inductor-coil coil-1"><div class="coil-core"></div><div class="coil-wire"></div></div>
+                <div class="inductor-coil coil-2"><div class="coil-core"></div><div class="coil-wire"></div></div>
+                <div class="inductor-coil coil-3"><div class="coil-core"></div><div class="coil-wire"></div></div>
+                <div class="inductor-coil coil-4"><div class="coil-core"></div><div class="coil-wire"></div></div>
+                <div class="inductor-coil coil-5"><div class="coil-core"></div><div class="coil-wire"></div></div>
+                <div class="inductor-coil coil-6"><div class="coil-core"></div><div class="coil-wire"></div></div>
+                <div class="inductor-coil coil-7"><div class="coil-core"></div><div class="coil-wire"></div></div>
+                <div class="inductor-coil coil-8"><div class="coil-core"></div><div class="coil-wire"></div></div>
+                <div class="inductor-coil coil-9"><div class="coil-core"></div><div class="coil-wire"></div></div>
+                <div class="inductor-coil coil-10"><div class="coil-core"></div><div class="coil-wire"></div></div>
+              </div>
+
+              <!-- Layer 4: Segmented Energy Capacitors Ring (Counter-Rotating) -->
+              <div class="reactor-segmented-track">
+                <div class="segmented-conic-glow"></div>
+              </div>
+
+              <!-- Layer 3: Fine Technical Radial Markings & Iris Rings -->
+              <div class="reactor-iris-disk">
+                <div class="iris-concentric-line line-1"></div>
+                <div class="iris-concentric-line line-2"></div>
+                <div class="iris-concentric-line line-3"></div>
+                <div class="iris-crosshairs"></div>
+              </div>
+
+              <!-- Layer 6: Radiant Primary Containment Ring -->
+              <div class="reactor-containment-ring"></div>
+
+              <!-- Layer 7 & 6: The Core — Stark Prism & Blinding Pure Energy -->
+              <div class="reactor-core-complex">
+                <div class="core-plasma-orb"></div>
+                <div class="core-triangle-prism"></div>
+                <div class="core-flare-spark"></div>
+              </div>
+
+              <!-- Layer 9: Radar Scanner Light Beam Overlay -->
+              <div class="reactor-scanning-beam"></div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Scroll Indicator -->
+      <a href="#about" class="hud-scroll-prompt" aria-label="Scroll down to About section">
+        <span class="scroll-label">SYSTEM DESCENT</span>
+        <span class="scroll-arrow" aria-hidden="true">▼</span>
+      </a>
+    </section>
+
+    <!-- ===============================================================
+         01 // ABOUT SECTION: PERSONNEL PROFILE
+         =============================================================== -->
+    <section id="about" class="hud-section" aria-labelledby="about-heading">
+      <div class="section-container">
+        
+        <!-- Section Header -->
+        <div class="section-hud-header">
+          <div class="section-tag">
+            <span class="tag-cyan" aria-hidden="true">//</span>
+            <span>01 // PERSONNEL PROFILE</span>
+          </div>
+          <h2 id="about-heading" class="section-title">The Mind Behind the Machine</h2>
+          <div class="section-hud-line" aria-hidden="true"></div>
+        </div>
+
+        <div class="about-grid">
+          
+          <!-- Main Holographic Dossier Panel -->
+          <article class="hud-panel about-primary-panel">
+            <div class="panel-corner corner-tl" aria-hidden="true"></div>
+            <div class="panel-corner corner-tr" aria-hidden="true"></div>
+            <div class="panel-corner corner-bl" aria-hidden="true"></div>
+            <div class="panel-corner corner-br" aria-hidden="true"></div>
+            <div class="panel-left-power-rail" aria-hidden="true"></div>
+
+            <div class="panel-header-strip">
+              <span class="panel-id">DOSSIER // ANKIT-01</span>
+              <span class="panel-status-tag">RECORD ACTIVE</span>
+            </div>
+
+            <div class="panel-body">
+              <h3 class="dossier-headline">Curiosity-Led Exploration</h3>
+              <p class="dossier-text">
+                I'm Ankit Choudhary, a student and aspiring software developer. When I start learning something that interests me, I naturally become curious about it and enjoy exploring it more deeply. I'm particularly interested in Artificial Intelligence and enjoy understanding the technologies that power the digital world. I'm building my foundation in HTML, CSS, Python, and command-line tools while continuing to discover what I can create.
+              </p>
+
+              <!-- Profile Metadata Matrix -->
+              <div class="profile-meta-matrix" aria-label="Personnel metadata">
+                <div class="meta-item">
+                  <span class="meta-label">IDENTITY:</span>
+                  <span class="meta-value">Ankit Choudhary</span>
+                </div>
+                <div class="meta-item">
+                  <span class="meta-label">CURRENT FOCUS:</span>
+                  <span class="meta-value">Learning &amp; Building</span>
+                </div>
+                <div class="meta-item">
+                  <span class="meta-label">CORE INTERESTS:</span>
+                  <span class="meta-value highlight-cyan">Programming &amp; Artificial Intelligence</span>
+                </div>
+                <div class="meta-item">
+                  <span class="meta-label">DEV STAGE:</span>
+                  <span class="meta-value">Student / Beginner</span>
+                </div>
+                <div class="meta-item">
+                  <span class="meta-label">MINDSET:</span>
+                  <span class="meta-value">Curiosity-Driven</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Secondary Directive & Philosophy Panel -->
+          <aside class="hud-panel about-secondary-panel" aria-label="System directives">
+            <div class="panel-corner corner-tl" aria-hidden="true"></div>
+            <div class="panel-corner corner-tr" aria-hidden="true"></div>
+            <div class="panel-corner corner-bl" aria-hidden="true"></div>
+            <div class="panel-corner corner-br" aria-hidden="true"></div>
+
+            <div class="panel-header-strip">
+              <span class="panel-id">CORE DIRECTIVE</span>
+              <span class="panel-status-tag">CONTINUOUS</span>
+            </div>
+
+            <div class="panel-body directive-body">
+              <div class="directive-quote-box">
+                <div class="directive-label">CURRENT DIRECTIVE:</div>
+                <blockquote class="directive-quote">
+                  "Learn continuously. Build consistently. Explore intelligently."
+                </blockquote>
+              </div>
+
+              <!-- JARVIS Visual Telemetry Waveform -->
+              <div class="jarvis-waveform-box" aria-hidden="true">
+                <div class="waveform-header">HEURISTIC ANALYSIS // ACTIVE</div>
+                <div class="waveform-bars">
+                  <span class="wave-bar wb-1"></span>
+                  <span class="wave-bar wb-2"></span>
+                  <span class="wave-bar wb-3"></span>
+                  <span class="wave-bar wb-4"></span>
+                  <span class="wave-bar wb-5"></span>
+                  <span class="wave-bar wb-6"></span>
+                  <span class="wave-bar wb-7"></span>
+                  <span class="wave-bar wb-8"></span>
+                  <span class="wave-bar wb-9"></span>
+                  <span class="wave-bar wb-10"></span>
+                  <span class="wave-bar wb-11"></span>
+                  <span class="wave-bar wb-12"></span>
+                </div>
+              </div>
+
+              <div class="directive-notes">
+                <div class="note-row">
+                  <span class="note-bullet">◈</span>
+                  <span><strong>Foundation:</strong> Focused on clean fundamentals over fleeting shortcuts.</span>
+                </div>
+                <div class="note-row">
+                  <span class="note-bullet">◈</span>
+                  <span><strong>AI Orientation:</strong> Fascinated by intelligent systems and neural architectures.</span>
+                </div>
+                <div class="note-row">
+                  <span class="note-bullet">◈</span>
+                  <span><strong>Hands-On Approach:</strong> Learning through typing code, testing in terminal, and iterative experimentation.</span>
+                </div>
+              </div>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===============================================================
+         02 // SKILLS SECTION: SYSTEM CAPABILITIES
+         =============================================================== -->
+    <section id="skills" class="hud-section" aria-labelledby="skills-heading">
+      <div class="section-container">
+        
+        <!-- Section Header -->
+        <div class="section-hud-header">
+          <div class="section-tag">
+            <span class="tag-cyan" aria-hidden="true">//</span>
+            <span>02 // CAPABILITY MATRIX</span>
+          </div>
+          <h2 id="skills-heading" class="section-title">Tools in My Arsenal</h2>
+          <p class="section-subtitle">
+            "Every skill begins with curiosity. These are the technologies I'm exploring and developing."
+          </p>
+          <div class="section-hud-line" aria-hidden="true"></div>
+        </div>
+
+        <!-- Capability Grid -->
+        <div class="skills-grid">
+          
+          <!-- Module 01: HTML -->
+          <article class="hud-panel skill-card">
+            <div class="panel-corner corner-tl" aria-hidden="true"></div>
+            <div class="panel-corner corner-tr" aria-hidden="true"></div>
+            <div class="panel-corner corner-bl" aria-hidden="true"></div>
+            <div class="panel-corner corner-br" aria-hidden="true"></div>
+            
+            <div class="skill-card-top">
+              <span class="module-number">MODULE 01</span>
+              <span class="module-status-badge">EXPLORING</span>
+            </div>
+
+            <!-- CSS-Drawn Semantic Tag Icon -->
+            <div class="skill-symbol-viewport" aria-hidden="true">
+              <div class="symbol-html-tags">
+                <span class="tag-bracket">&lt;</span>
+                <span class="tag-slash">/</span>
+                <span class="tag-bracket">&gt;</span>
+              </div>
+            </div>
+
+            <div class="skill-card-body">
+              <h3 class="skill-title">HTML</h3>
+              <p class="skill-description">
+                Building structured, semantic foundations for web experiences.
+              </p>
+            </div>
+
+            <div class="skill-card-footer">
+              <div class="tech-tag-row">
+                <span class="tech-tag">Semantic Structure</span>
+                <span class="tech-tag">HTML5 Standards</span>
+                <span class="tech-tag">Accessibility</span>
+              </div>
+              <div class="skill-indicator-row">
+                <span class="indicator-label">STAGE:</span>
+                <span class="indicator-value">Foundations &amp; Semantics</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Module 02: CSS -->
+          <article class="hud-panel skill-card">
+            <div class="panel-corner corner-tl" aria-hidden="true"></div>
+            <div class="panel-corner corner-tr" aria-hidden="true"></div>
+            <div class="panel-corner corner-bl" aria-hidden="true"></div>
+            <div class="panel-corner corner-br" aria-hidden="true"></div>
+
+            <div class="skill-card-top">
+              <span class="module-number">MODULE 02</span>
+              <span class="module-status-badge">EXPLORING</span>
+            </div>
+
+            <!-- CSS-Drawn Layered Geometric Prism Icon -->
+            <div class="skill-symbol-viewport" aria-hidden="true">
+              <div class="symbol-css-prism">
+                <div class="prism-layer layer-back"></div>
+                <div class="prism-layer layer-mid"></div>
+                <div class="prism-layer layer-front"></div>
+              </div>
+            </div>
+
+            <div class="skill-card-body">
+              <h3 class="skill-title">CSS</h3>
+              <p class="skill-description">
+                Exploring layouts, responsive design, visual systems, and animation.
+              </p>
+            </div>
+
+            <div class="skill-card-footer">
+              <div class="tech-tag-row">
+                <span class="tech-tag">Grid &amp; Flexbox</span>
+                <span class="tech-tag">CSS Keyframes</span>
+                <span class="tech-tag">Responsive UI</span>
+              </div>
+              <div class="skill-indicator-row">
+                <span class="indicator-label">STAGE:</span>
+                <span class="indicator-value">Layouts &amp; Motion</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Module 03: Python -->
+          <article class="hud-panel skill-card">
+            <div class="panel-corner corner-tl" aria-hidden="true"></div>
+            <div class="panel-corner corner-tr" aria-hidden="true"></div>
+            <div class="panel-corner corner-bl" aria-hidden="true"></div>
+            <div class="panel-corner corner-br" aria-hidden="true"></div>
+
+            <div class="skill-card-top">
+              <span class="module-number">MODULE 03</span>
+              <span class="module-status-badge">EXPLORING</span>
+            </div>
+
+            <!-- CSS-Drawn Logic Node / Abstract Python Symbol -->
+            <div class="skill-symbol-viewport" aria-hidden="true">
+              <div class="symbol-python-nodes">
+                <div class="node-loop node-blue"></div>
+                <div class="node-loop node-gold"></div>
+                <div class="node-eye eye-top"></div>
+                <div class="node-eye eye-bot"></div>
+              </div>
+            </div>
+
+            <div class="skill-card-body">
+              <h3 class="skill-title">Python</h3>
+              <p class="skill-description">
+                Learning programming fundamentals, problem-solving, and logical thinking.
+              </p>
+            </div>
+
+            <div class="skill-card-footer">
+              <div class="tech-tag-row">
+                <span class="tech-tag">Programming Core</span>
+                <span class="tech-tag">Logic &amp; Loops</span>
+                <span class="tech-tag">AI Pathways</span>
+              </div>
+              <div class="skill-indicator-row">
+                <span class="indicator-label">STAGE:</span>
+                <span class="indicator-value">Algorithms &amp; Syntax</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Module 04: Terminal / Command Line -->
+          <article class="hud-panel skill-card">
+            <div class="panel-corner corner-tl" aria-hidden="true"></div>
+            <div class="panel-corner corner-tr" aria-hidden="true"></div>
+            <div class="panel-corner corner-bl" aria-hidden="true"></div>
+            <div class="panel-corner corner-br" aria-hidden="true"></div>
+
+            <div class="skill-card-top">
+              <span class="module-number">MODULE 04</span>
+              <span class="module-status-badge">EXPLORING</span>
+            </div>
+
+            <!-- CSS-Drawn Shell Window with Blinking Cursor -->
+            <div class="skill-symbol-viewport" aria-hidden="true">
+              <div class="symbol-cli-window">
+                <div class="cli-top-bar">
+                  <span class="dot-btn"></span>
+                  <span class="dot-btn"></span>
+                  <span class="dot-btn"></span>
+                </div>
+                <div class="cli-screen">
+                  <span class="cli-prompt">jarvis:~$</span>
+                  <span class="cli-cmd">cat learn.py</span>
+                  <span class="cli-cursor"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-card-body">
+              <h3 class="skill-title">Terminal / Command Line</h3>
+              <p class="skill-description">
+                Exploring shell commands, files, directories, permissions, and command-line workflows.
+              </p>
+            </div>
+
+            <div class="skill-card-footer">
+              <div class="tech-tag-row">
+                <span class="tech-tag">Shell Navigation</span>
+                <span class="tech-tag">File Systems</span>
+                <span class="tech-tag">CLI Workflow</span>
+              </div>
+              <div class="skill-indicator-row">
+                <span class="indicator-label">STAGE:</span>
+                <span class="indicator-value">Commands &amp; Automation</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===============================================================
+         03 // PROJECTS SECTION: PROJECT ARCHIVE
+         =============================================================== -->
+    <section id="projects" class="hud-section" aria-labelledby="projects-heading">
+      <div class="section-container">
+        
+        <!-- Section Header -->
+        <div class="section-hud-header">
+          <div class="section-tag">
+            <span class="tag-cyan" aria-hidden="true">//</span>
+            <span>03 // DEVELOPMENT ARCHIVE</span>
+          </div>
+          <h2 id="projects-heading" class="section-title">Experiments in Progress</h2>
+          <p class="section-subtitle">
+            "Every project is an opportunity to turn something I've learned into something real."
+          </p>
+          <div class="section-hud-line" aria-hidden="true"></div>
+        </div>
+
+        <!-- Projects Archive Grid -->
+        <div class="projects-grid">
+          
+          <!-- PROJECT 001: Web Experience (Editable Placeholder) -->
+          <!-- EDITABLE PLACEHOLDER: Replace title, description, and link with your actual project details -->
+          <article class="hud-panel project-card">
+            <div class="panel-corner corner-tl" aria-hidden="true"></div>
+            <div class="panel-corner corner-tr" aria-hidden="true"></div>
+            <div class="panel-corner corner-bl" aria-hidden="true"></div>
+            <div class="panel-corner corner-br" aria-hidden="true"></div>
+
+            <div class="project-card-header">
+              <span class="project-id-tag">PROJECT // 001</span>
+              <span class="project-status-badge status-awaiting">AWAITING PROJECT DETAILS</span>
+            </div>
+
+            <!-- CSS Blueprint Diagram Preview -->
+            <div class="project-blueprint-preview" aria-hidden="true">
+              <div class="blueprint-grid-mesh"></div>
+              <div class="blueprint-ui-mockup">
+                <div class="blueprint-nav-bar"></div>
+                <div class="blueprint-hero-wire"></div>
+                <div class="blueprint-col-left"></div>
+                <div class="blueprint-col-right"></div>
+              </div>
+              <div class="blueprint-scan-ray"></div>
+              <div class="blueprint-label">SCHEMATIC // WEB-UI-01</div>
+            </div>
+
+            <div class="project-content">
+              <h3 class="project-title">PROJECT 001 — WEB EXPERIENCE</h3>
+              
+              <p class="project-description">
+                A space to showcase a website or frontend project built while learning HTML and CSS.
+              </p>
+
+              <div class="project-tech-stack" aria-label="Technologies used">
+                <span class="tech-pill">HTML</span>
+                <span class="tech-pill">CSS</span>
+              </div>
+
+              <!-- Editable Project Link Placeholder (Non-broken, clearly identified) -->
+              <div class="project-action-zone">
+                <div class="placeholder-action-pill" title="Replace with live project URL or repository link">
+                  <span class="pill-icon" aria-hidden="true">⬡</span>
+                  <span class="pill-text">PLACEHOLDER // READY FOR REPO LINK</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 002: Python Lab (Editable Placeholder) -->
+          <!-- EDITABLE PLACEHOLDER: Replace title, description, and link with your actual project details -->
+          <article class="hud-panel project-card">
+            <div class="panel-corner corner-tl" aria-hidden="true"></div>
+            <div class="panel-corner corner-tr" aria-hidden="true"></div>
+            <div class="panel-corner corner-bl" aria-hidden="true"></div>
+            <div class="panel-corner corner-br" aria-hidden="true"></div>
+
+            <div class="project-card-header">
+              <span class="project-id-tag">PROJECT // 002</span>
+              <span class="project-status-badge status-awaiting">AWAITING PROJECT DETAILS</span>
+            </div>
+
+            <!-- CSS Blueprint Diagram Preview -->
+            <div class="project-blueprint-preview" aria-hidden="true">
+              <div class="blueprint-grid-mesh"></div>
+              <div class="blueprint-flowchart">
+                <div class="flow-node node-start"></div>
+                <div class="flow-line-v"></div>
+                <div class="flow-diamond"></div>
+                <div class="flow-line-branch"></div>
+                <div class="flow-node node-end1"></div>
+                <div class="flow-node node-end2"></div>
+              </div>
+              <div class="blueprint-scan-ray"></div>
+              <div class="blueprint-label">SCHEMATIC // PY-LOGIC-02</div>
+            </div>
+
+            <div class="project-content">
+              <h3 class="project-title">PROJECT 002 — PYTHON LAB</h3>
+              
+              <p class="project-description">
+                A space to showcase a Python program, logic exercise, or small automation experiment.
+              </p>
+
+              <div class="project-tech-stack" aria-label="Technologies used">
+                <span class="tech-pill">PYTHON</span>
+              </div>
+
+              <!-- Editable Project Link Placeholder -->
+              <div class="project-action-zone">
+                <div class="placeholder-action-pill" title="Replace with live project URL or repository link">
+                  <span class="pill-icon" aria-hidden="true">⬡</span>
+                  <span class="pill-text">PLACEHOLDER // READY FOR REPO LINK</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 003: Command Center (Editable Placeholder) -->
+          <!-- EDITABLE PLACEHOLDER: Replace title, description, and link with your actual project details -->
+          <article class="hud-panel project-card">
+            <div class="panel-corner corner-tl" aria-hidden="true"></div>
+            <div class="panel-corner corner-tr" aria-hidden="true"></div>
+            <div class="panel-corner corner-bl" aria-hidden="true"></div>
+            <div class="panel-corner corner-br" aria-hidden="true"></div>
+
+            <div class="project-card-header">
+              <span class="project-id-tag">PROJECT // 003</span>
+              <span class="project-status-badge status-awaiting">AWAITING PROJECT DETAILS</span>
+            </div>
+
+            <!-- CSS Blueprint Diagram Preview -->
+            <div class="project-blueprint-preview" aria-hidden="true">
+              <div class="blueprint-grid-mesh"></div>
+              <div class="blueprint-terminal-lines">
+                <div class="term-line line-dim">$ init_environment --fast</div>
+                <div class="term-line line-bright">> Mounting shell scripts... [DONE]</div>
+                <div class="term-line line-dim">$ chmod +x ./deploy_agent.sh</div>
+                <div class="term-line line-bright">> Execution status: 0x00 OK</div>
+              </div>
+              <div class="blueprint-scan-ray"></div>
+              <div class="blueprint-label">SCHEMATIC // CLI-AUTOMATION-03</div>
+            </div>
+
+            <div class="project-content">
+              <h3 class="project-title">PROJECT 003 — COMMAND CENTER</h3>
+              
+              <p class="project-description">
+                A space to showcase a command-line learning project, shell workflow, or terminal-based experiment.
+              </p>
+
+              <div class="project-tech-stack" aria-label="Technologies used">
+                <span class="tech-pill">TERMINAL</span>
+              </div>
+
+              <!-- Editable Project Link Placeholder -->
+              <div class="project-action-zone">
+                <div class="placeholder-action-pill" title="Replace with live project URL or repository link">
+                  <span class="pill-icon" aria-hidden="true">⬡</span>
+                  <span class="pill-text">PLACEHOLDER // READY FOR REPO LINK</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===============================================================
+         04 // EDUCATION SECTION: LEARNING LOG
+         =============================================================== -->
+    <section id="education" class="hud-section" aria-labelledby="education-heading">
+      <div class="section-container">
+        
+        <!-- Section Header -->
+        <div class="section-hud-header">
+          <div class="section-tag">
+            <span class="tag-cyan" aria-hidden="true">//</span>
+            <span>04 // KNOWLEDGE DATABASE</span>
+          </div>
+          <h2 id="education-heading" class="section-title">The Learning Protocol</h2>
+          <div class="section-hud-line" aria-hidden="true"></div>
+        </div>
+
+        <!-- Timeline of Learning Journey -->
+        <div class="education-layout">
+          
+          <div class="hud-panel timeline-panel">
+            <div class="panel-corner corner-tl" aria-hidden="true"></div>
+            <div class="panel-corner corner-tr" aria-hidden="true"></div>
+            <div class="panel-corner corner-bl" aria-hidden="true"></div>
+            <div class="panel-corner corner-br" aria-hidden="true"></div>
+
+            <div class="timeline-container">
+              <div class="timeline-vertical-rail" aria-hidden="true">
+                <div class="rail-pulse-node"></div>
+              </div>
+
+              <!-- Timeline Item 1: Academic Institution Placeholder -->
+              <!-- EDITABLE PLACEHOLDER: Update school / college name and studies below -->
+              <div class="timeline-node-card">
+                <div class="node-marker" aria-hidden="true">
+                  <div class="node-dot"></div>
+                </div>
+                <div class="node-content">
+                  <div class="node-meta-row">
+                    <span class="node-time-badge">CURRENT // IN PROGRESS</span>
+                    <span class="node-tag">ACADEMIC PATHWAY</span>
+                  </div>
+                  <h3 class="node-title">School / College Studies</h3>
+                  <div class="node-institution">
+                    <span class="label-key">INSTITUTION:</span>
+                    <span class="label-val">[ Institution Name Placeholder — Editable ]</span>
+                  </div>
+                  <div class="node-qualification">
+                    <span class="label-key">PROGRAM:</span>
+                    <span class="label-val">[ Course / Qualification Placeholder — Editable ]</span>
+                  </div>
+                  <p class="node-description">
+                    Pursuing academic coursework and building a solid disciplinary foundation while actively applying core principles to software development and computer science fundamentals.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Timeline Item 2: Self-Directed Technical Exploration -->
+              <div class="timeline-node-card">
+                <div class="node-marker" aria-hidden="true">
+                  <div class="node-dot"></div>
+                </div>
+                <div class="node-content">
+                  <div class="node-meta-row">
+                    <span class="node-time-badge">ONGOING // CONTINUOUS</span>
+                    <span class="node-tag">SELF-INITIATED LEARNING</span>
+                  </div>
+                  <h3 class="node-title">Independent Technical Exploration</h3>
+                  <div class="node-institution">
+                    <span class="label-key">FOCUS:</span>
+                    <span class="label-val">Programming, Web Standards &amp; Artificial Intelligence</span>
+                  </div>
+                  <div class="node-qualification">
+                    <span class="label-key">METHOD:</span>
+                    <span class="label-val">Hands-on coding, documentation deep dives &amp; terminal experiments</span>
+                  </div>
+                  <p class="node-description">
+                    Developing practical coding intuition through building projects from scratch, understanding Unix commands, reading documentation, and exploring modern AI developments.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Current Learning Interests Subsection -->
+          <div class="learning-interests-block">
+            <h3 class="interests-section-title">
+              <span class="interests-bracket" aria-hidden="true">//</span>
+              <span>CURRENT LEARNING INTERESTS</span>
+            </h3>
+            <p class="interests-intro">
+              Active areas of curious investigation and skill cultivation:
+            </p>
+
+            <div class="interests-grid">
+              
+              <div class="hud-panel interest-card">
+                <div class="panel-corner corner-tl" aria-hidden="true"></div>
+                <div class="panel-corner corner-br" aria-hidden="true"></div>
+                <div class="interest-header">
+                  <span class="interest-num">01</span>
+                  <span class="interest-icon" aria-hidden="true">🌐</span>
+                </div>
+                <h4 class="interest-name">Web Development with HTML &amp; CSS</h4>
+                <p class="interest-text">Understanding responsive layouts, accessible semantic structures, and advanced CSS animation techniques.</p>
+              </div>
+
+              <div class="hud-panel interest-card">
+                <div class="panel-corner corner-tl" aria-hidden="true"></div>
+                <div class="panel-corner corner-br" aria-hidden="true"></div>
+                <div class="interest-header">
+                  <span class="interest-num">02</span>
+                  <span class="interest-icon" aria-hidden="true">⚡</span>
+                </div>
+                <h4 class="interest-name">Python Programming</h4>
+                <p class="interest-text">Mastering programming logic, problem-solving, structured algorithms, and foundational Python scripting.</p>
+              </div>
+
+              <div class="hud-panel interest-card">
+                <div class="panel-corner corner-tl" aria-hidden="true"></div>
+                <div class="panel-corner corner-br" aria-hidden="true"></div>
+                <div class="interest-header">
+                  <span class="interest-num">03</span>
+                  <span class="interest-icon" aria-hidden="true">💻</span>
+                </div>
+                <h4 class="interest-name">Terminal &amp; Command-Line</h4>
+                <p class="interest-text">Navigating shell environments, managing file permissions, crafting automated scripts, and command-line efficiency.</p>
+              </div>
+
+              <div class="hud-panel interest-card">
+                <div class="panel-corner corner-tl" aria-hidden="true"></div>
+                <div class="panel-corner corner-br" aria-hidden="true"></div>
+                <div class="interest-header">
+                  <span class="interest-num">04</span>
+                  <span class="interest-icon" aria-hidden="true">🧠</span>
+                </div>
+                <h4 class="interest-name">Artificial Intelligence</h4>
+                <p class="interest-text">Fascinated by machine learning architectures, neural networks, and how modern AI tools are shaping the future of software.</p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===============================================================
+         05 // CONTACT SECTION: ESTABLISH CONNECTION
+         =============================================================== -->
+    <section id="contact" class="hud-section" aria-labelledby="contact-heading">
+      <div class="section-container">
+        
+        <!-- Section Header -->
+        <div class="section-hud-header">
+          <div class="section-tag">
+            <span class="tag-cyan" aria-hidden="true">//</span>
+            <span>05 // COMMUNICATION INTERFACE</span>
+          </div>
+          <h2 id="contact-heading" class="section-title">Let's Connect</h2>
+          <p class="section-subtitle">
+            "Interested in technology, ideas, or building something interesting? I'd be happy to connect, learn, and exchange ideas."
+          </p>
+          <div class="section-hud-line" aria-hidden="true"></div>
+        </div>
+
+        <div class="contact-deck-wrapper">
+          <div class="hud-panel contact-deck-panel">
+            <div class="panel-corner corner-tl" aria-hidden="true"></div>
+            <div class="panel-corner corner-tr" aria-hidden="true"></div>
+            <div class="panel-corner corner-bl" aria-hidden="true"></div>
+            <div class="panel-corner corner-br" aria-hidden="true"></div>
+
+            <div class="contact-panel-head">
+              <div class="signal-indicator-group">
+                <span class="signal-dot" aria-hidden="true"></span>
+                <span class="signal-text">COMMUNICATION FREQUENCY // STANDBY FOR HANDSHAKE</span>
+              </div>
+              <div class="comm-channel-id">CH // SECURE-STARK-09</div>
+            </div>
+
+            <!-- Signal Visualizer Bar -->
+            <div class="comm-signal-visualizer" aria-hidden="true">
+              <div class="signal-beam"></div>
+              <div class="signal-ticks">
+                <span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+            </div>
+
+            <!-- Contact Channels (Editable Placeholders) -->
+            <!-- EDITABLE PLACEHOLDER: Insert your actual email, GitHub profile, and LinkedIn URL below -->
+            <div class="contact-channels-grid">
+              
+              <!-- Channel 01: Email -->
+              <div class="comm-channel-card">
+                <div class="channel-number">CHANNEL 01</div>
+                <div class="channel-type">DIRECT DISPATCH</div>
+                <h3 class="channel-title">Electronic Mail</h3>
+                <div class="channel-placeholder-value">
+                  <code>[ your.email@example.com ]</code>
+                </div>
+                <p class="channel-note">
+                  <!-- To connect, replace with: <a href="mailto:your.email@example.com" class="comm-active-link">SEND EMAIL</a> -->
+                  Awaiting email specification. Ready for <code>mailto:</code> link insertion.
+                </p>
+              </div>
+
+              <!-- Channel 02: GitHub -->
+              <div class="comm-channel-card">
+                <div class="channel-number">CHANNEL 02</div>
+                <div class="channel-type">CODE REPOSITORY</div>
+                <h3 class="channel-title">GitHub Profile</h3>
+                <div class="channel-placeholder-value">
+                  <code>[ github.com/your-username ]</code>
+                </div>
+                <p class="channel-note">
+                  <!-- To connect, replace with: <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" class="comm-active-link">VISIT GITHUB</a> -->
+                  Awaiting profile specification. Ready for GitHub URL insertion.
+                </p>
+              </div>
+
+              <!-- Channel 03: LinkedIn -->
+              <div class="comm-channel-card">
+                <div class="channel-number">CHANNEL 03</div>
+                <div class="channel-type">PROFESSIONAL NETWORK</div>
+                <h3 class="channel-title">LinkedIn Profile</h3>
+                <div class="channel-placeholder-value">
+                  <code>[ linkedin.com/in/your-username ]</code>
+                </div>
+                <p class="channel-note">
+                  <!-- To connect, replace with: <a href="https://linkedin.com/in/your-username" target="_blank" rel="noopener noreferrer" class="comm-active-link">VISIT LINKEDIN</a> -->
+                  Awaiting profile specification. Ready for LinkedIn URL insertion.
+                </p>
+              </div>
+
+            </div>
+
+            <div class="contact-panel-footer">
+              <div class="footer-telemetry-tag">
+                <span class="pulse-beacon" aria-hidden="true"></span>
+                <span>CHANNELS READY FOR CONFIGURATION</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =================================================================
+       FOOTER: REFINED HOLOGRAPHIC DOCK
+       ================================================================= -->
+  <footer class="hud-footer">
+    <div class="footer-container">
+      
+      <!-- Top Row -->
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-reactor-icon" aria-hidden="true">
+            <div class="f-core"></div>
+          </div>
+          <div class="footer-brand-meta">
+            <span class="footer-name">ANKIT CHOUDHARY</span>
+            <span class="footer-motto">CURIOSITY // CODE // CONTINUOUS LEARNING</span>
+          </div>
+        </div>
+
+        <a href="#home" class="hud-btn hud-btn-sm back-to-top" aria-label="Return to the top of the page">
+          <span class="btn-bracket-left" aria-hidden="true">[</span>
+          <span class="btn-text">▲ RETURN TO APEX</span>
+          <span class="btn-bracket-right" aria-hidden="true">]</span>
+        </a>
+      </div>
+
+      <!-- Divider -->
+      <div class="footer-divider" aria-hidden="true"></div>
+
+      <!-- Bottom Row -->
+      <div class="footer-bottom">
+        <div class="footer-system-state">
+          <span class="footer-status-dot" aria-hidden="true"></span>
+          <span>STARK HEURISTIC ENGINE // ALL SYSTEMS OPERATIONAL</span>
+        </div>
+        <div class="footer-copyright">
+          &copy; 2026 ANKIT CHOUDHARY. CRAFTED WITH PURE HTML5 &amp; CSS3. NO JAVASCRIPT.
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>
